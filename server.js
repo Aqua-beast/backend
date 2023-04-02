@@ -10,8 +10,8 @@ const app = express();
 
 // Replace the connection string with your own MongoDB connection string
 // const uri = "mongodb://0.0.0.0:27017/blogs";
-
-const uri = "mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.fzv6xup.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority"
+const uri = "mongodb+srv://admin:9ravLckETXOEOkrL@cluster0.fzv6xup.mongodb.net/blog?retryWrites=true&w=majority"
+// const uri = "mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.fzv6xup.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority"
 // this is actually the new way to connect to localhost port for db blog with collection as article
 // the changes made in the schema have to be done separately to db otherwise the collections will not be stored 
 // const uri = "mongodb://0.0.0.0:27017/blogs"
