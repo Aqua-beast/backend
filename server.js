@@ -18,6 +18,6 @@ app.get('/', async (req, res)=>{
     res.render('articles/index', {articles: articles});
 })
 
-app.listen(5000, function(){
-    console.log("server is up running at port 5000");
-})
+app.listen(process.env.PORT || 3000, '0.0.0.0', () => {
+    console.log(`Server listening on port ${server.address().port}`);
+});
