@@ -1,0 +1,21 @@
+<!-- since it is a partial view. hence we are starting with _ to show it is a partial view -->
+<div class="form-group">
+    <label for="title">Title</label>
+    <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control">
+    <!-- required in forms -->
+    <!-- Form controls automatically receive some global styling with Bootstrap: All textual <input> , <textarea> , and <select> elements with class .form-control have a width of 100%. -->
+</div>
+
+<div class="form-group">
+    <label for="description">Description</label>
+    <textarea name="description" id="description" class="form-control"><%= article.description %></textarea>
+    <!-- default value for no. of cols is 30 and rows is 2 -->
+</div>
+
+<div class="form-group">
+    <label for="markdown">Markdown</label>
+    <textarea required name="markdown" id="markdown" class="form-control"><%= article.markdown %></textarea>
+</div>
+
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>
